@@ -8,3 +8,4 @@ class IndexView(TemplateView):
 
 class Home(TemplateView):
     template_name="base/home.html"
+    

@@ -5,6 +5,7 @@ from django.contrib.auth.views import (
     LoginView, LogoutView
 )
 from django.contrib.sites.shortcuts import get_current_site
+from django.core.checks import messages
 from django.core.signing import BadSignature, SignatureExpired, loads, dumps
 from django.http import Http404, HttpResponseBadRequest
 from django.shortcuts import redirect
@@ -97,12 +98,27 @@ class UserCreateComplete(generic.TemplateView):
 
 
 from accounts.forms import ProfileForm
+from .models import Profile
+from django.urls import reverse_lazy
 
-class ProfileSetting(generic.FormView):
-    template_name='accounts/profile_setting.html'
+class ProfileCreate(LoginRequiredMixin, generic.CreateView):
+    template_name='accounts/profile_create.html'
+    model=Profile
     form_class=ProfileForm
-    success_url="/"
+    success_url=reverse_lazy('base:home')
+
+    def form_valid(self, form):
+        profile=form.save(commit=False)
+        profile.user=self.request.user
+        profile.save()
+        return super().form_valid(form)
 
 
 class Demo(TemplateView):
     template_name="accounts/user_create_complete.html"
+
+
+class ProfileSetting(LoginRequiredMixin,generic.DetailView):
+    model=Profile
+    template_name='accounts/profile_setting.html'
+    

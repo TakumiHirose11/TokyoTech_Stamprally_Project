@@ -9,6 +9,7 @@ section{
     background-image: url(../img/blue-circle.svg);
     text-align: center;
     padding-top: 10vh;
+    flex: 1;
 }
 
 .hero h1{

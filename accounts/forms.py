@@ -105,9 +105,10 @@ class UserCreateForm(UserCreationForm):
         
         return email
 
-from accounts.models import ProfileSetting
+from accounts.models import Profile
+
 class ProfileForm(forms.ModelForm):
     class Meta:
-        model=ProfileSetting
+        model=Profile
         SELECTION1=(('a','学院はどこですか？'),('b','部活・サークルは？'),('c','出身県はどこですか？'),('d','出身高校はどこですか？'),('e','興味のある分野はなんですか？'),('f','将来の夢はなんですか？'))
         fields=('unit_number','question1','question2','question3','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','profile_picture','nickname','comment')

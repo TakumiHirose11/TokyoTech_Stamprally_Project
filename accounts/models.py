@@ -92,8 +92,8 @@ class User(AbstractBaseUser, PermissionsMixin):
         """
         return self.email
 
-class ProfileSetting(models.Model):
-    user=models.OneToOneField(User, on_delete=CASCADE)
+class Profile(models.Model):
+    user=models.OneToOneField(User, verbose_name='ユーザー',on_delete=CASCADE)
     unit_number=models.PositiveIntegerField(verbose_name='ユニット',default=1) #制約をつけたい
     
     SELECTION1=(('a','学院はどこですか？'),('b','部活・サークルは？'),('c','出身県はどこですか？'),('d','出身高校はどこですか？'),('e','興味のある分野はなんですか？'),('f','将来の夢はなんですか？'))
@@ -113,3 +113,10 @@ class ProfileSetting(models.Model):
     profile_picture=models.ImageField(verbose_name='プロフィール写真', blank=True, null=True)
     nickname=models.TextField(verbose_name='ニックネーム', max_length=20)
     comment=models.TextField(verbose_name='ひとことコメント', max_length=50,null=True)
+
+    def __str__(self):
+        return self.nickname
+
+
+    class Meta:
+        verbose_name_plural='Profile'
