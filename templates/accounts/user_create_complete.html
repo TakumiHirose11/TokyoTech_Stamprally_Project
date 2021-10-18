@@ -8,9 +8,15 @@
 {% block title %}TokyoTech_StamprallyProject |signup complete{% endblock %}
 
 {% block contents %}
-<p>
-    本登録が完了しました。<br>
-    プロフィール設定に進んでください<br>
+<section class="hero">
+    <h1>Sign Up</h1>
+    <h1>Completed!</h1>
+    <p>
+        本登録が完了しました。<br>
+        プロフィール設定に進んでください<br>
+    </p>
+    
     <a class="btn btn-primary btn-lg" href="{% url 'accounts:profile_setting' %}">プロフィール設定</a>
-</p>
+    
+</section>
 {% endblock %}

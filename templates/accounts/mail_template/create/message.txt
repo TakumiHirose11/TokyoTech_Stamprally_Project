@@ -6,4 +6,4 @@
 本登録用URL
 {{ protocol}}://{{ domain }}{% url 'accounts:user_create_complete' token %}
 
-ほにゃらら
+TokyoTech Stamprally Project

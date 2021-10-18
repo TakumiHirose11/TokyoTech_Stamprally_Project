@@ -13,17 +13,14 @@
 
 
 {% block contents %}
-<h2>会員登録</h2>
-<p>メールアドレスはmアドレスを使ってください！</p>
-<form method="POST">
-    {% csrf_token %}
-    <input type="hidden" name="text" value="{{ next }}">
-    {% bootstrap_form form %}
-    {% buttons %}
-    <button type="submit">
-        サインアップ
-    </button>
-   
-    {% endbuttons %}
-</form>
+<section class="hero">
+    <h1>Sign Up</h1>
+    <p>メールアドレスはmアドレスを使ってください！</p>
+    <form method="POST">
+     {% csrf_token %}
+     <input type="hidden" name="text" value="{{ next }}">
+        {% bootstrap_form form %}
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+    </form>
+</section>
 {% endblock %}
