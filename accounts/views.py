@@ -104,4 +104,5 @@ class ProfileSetting(generic.FormView):
     success_url="/"
 
 
-
+class Demo(TemplateView):
+    template_name="accounts/user_create_complete.html"

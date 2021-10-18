@@ -7,11 +7,15 @@
 
 {% block title %}TokyoTech_StamprallyProject |signup complete{% endblock %}
 
+{% block head %}
+<link href="{% static 'css/user_create_complete_style.css' %}" rel="stylesheet">
+{% endblock %}
+
 {% block contents %}
 <section class="hero">
     <h1>Sign Up</h1>
     <h1>Completed!</h1>
-    <p>
+    <p class="message">
         本登録が完了しました。<br>
         プロフィール設定に進んでください<br>
     </p>

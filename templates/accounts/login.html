@@ -15,6 +15,10 @@
 <section class="hero">
     <h1>WELCOME</h1>
 
+    {% if user.is_authenticated %}
+    <a class="btn btn-primary btn-lg" href="{% url 'accounts:logout' %}">ログアウト</a>
+    
+    {% else %}
     <form method="post" class="form">
         {% csrf_token %}
         <input type="hidden" name="text" value="{{ next }}">
@@ -24,8 +28,7 @@
 
     <a href="{% url 'accounts:user_create' %}"><p class="p">アカウントを作成</p></a>
 
-    {% if user.is_authenticated %}
-    <a href="{% url 'accounts:logout' %}"><p class="p">ログアウト</p></a>
+    
     {% endif %}
 </section>
 

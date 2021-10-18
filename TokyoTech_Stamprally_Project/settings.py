@@ -139,5 +139,5 @@ EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 #実際に送信するなら下
 #EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
-"""一時的にコメントアウト"""
+
 AUTH_USER_MODEL = 'accounts.User'

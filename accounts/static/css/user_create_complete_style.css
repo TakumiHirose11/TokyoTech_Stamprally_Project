@@ -1,0 +1,24 @@
+.section{
+    height: 30vh;
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.hero{
+    background-image: url(../img/blue-circle.svg);
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.hero h1{
+    font-family: 'Raleway', sans-serif;
+    color: #305F72;
+    font-size: 2.8rem;
+
+}
+
+.message{
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
