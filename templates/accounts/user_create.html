@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+{% block title %}TokyoTech_StamprallyProject |signup{% endblock %}
+
+{% block head %}
+<link href="{% static 'css/user_create_style.css' %}" rel="stylesheet">
+{% endblock %}
+
+
+{% block contents %}
+<h2>会員登録</h2>
+<p>メールアドレスはmアドレスを使ってください！</p>
+<form method="POST">
+    {% csrf_token %}
+    <input type="hidden" name="text" value="{{ next }}">
+    {% bootstrap_form form %}
+    {% buttons %}
+    <button type="submit">
+        サインアップ
+    </button>
+   
+    {% endbuttons %}
+</form>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block title %}TokyoTech_StamprallyProject{% endblock %}
+
+{% block head %}
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+<link href="{% static 'css/index_style.css' %}" rel="stylesheet">
+
+{% endblock %}
+
+{% block contents %}
+<section class="hero">
+        
+    <img src= "{% static "img/school.svg" %}" class="school">
+    <h1>Tokyo Tech</h1>
+    <h1>人間スタンプラリー</h1>
+    <h1>プロジェクト</h1>
+
+    <p class="caption">ユニットが近い人同士で話しかけるきっかけをつくりました。</p>
+    <p class="getstarted">Get Started!!</p>
+    <a href="{% url 'accounts:login' %}"><img src="{% static "img/start.svg" %}" class="start"></a>
+
+    
+</section>  
+{% endblock %}

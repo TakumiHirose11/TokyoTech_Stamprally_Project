@@ -1,0 +1,207 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="266" height="257" viewBox="0 0 266 257">
+  <defs>
+    <filter id="パス_320">
+      <feOffset dy="-29" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="パス_319">
+      <feOffset dy="-5" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161" result="color-2"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color-2"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="パス_318" x="98" y="46" width="70" height="62" filterUnits="userSpaceOnUse">
+      <feOffset dy="-2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.161" result="color-3"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-3"/>
+      <feComposite operator="in" in="color-3"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+    <filter id="長方形_323" x="46" y="165" width="175" height="92" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="グループ_1908" data-name="グループ 1908" transform="translate(-62 -214)">
+    <g data-type="innerShadowGroup">
+      <g id="パス_320-2" data-name="パス 320" transform="translate(170 214)" fill="#fff">
+        <path d="M 50.5 38.5 L 0.5 38.5 L 0.5 0.5 L 50.5 0.5 L 50.5 38.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 38 L 50 38 L 50 1 L 1 1 M 0 0 L 51 0 L 51 39 L 0 39 L 0 0 Z" stroke="none"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 62, 214)" filter="url(#パス_320)">
+        <g id="パス_320-3" data-name="パス 320" transform="translate(108)" fill="#fff">
+          <path d="M 50.5 38.5 L 0.5 38.5 L 0.5 0.5 L 50.5 0.5 L 50.5 38.5 Z" stroke="none"/>
+          <path d="M 1 1 L 1 38 L 50 38 L 50 1 L 1 1 M 0 0 L 51 0 L 51 39 L 0 39 L 0 0 Z" stroke="none"/>
+        </g>
+      </g>
+      <g id="パス_320-4" data-name="パス 320" transform="translate(170 214)" fill="none">
+        <path d="M 50.5 38.5 L 0.5 38.5 L 0.5 0.5 L 50.5 0.5 L 50.5 38.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 38 L 50 38 L 50 1 L 1 1 M 0 0 L 51 0 L 51 39 L 0 39 L 0 0 Z" stroke="none" fill="#707070"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g id="パス_319-2" data-name="パス 319" transform="translate(166 225)" fill="#fff">
+        <path d="M 58.5 38.5 L 0.5 38.5 L 0.5 0.5 L 58.5 0.5 L 58.5 38.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 38 L 58 38 L 58 1 L 1 1 M 0 0 L 59 0 L 59 39 L 0 39 L 0 0 Z" stroke="none"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 62, 214)" filter="url(#パス_319)">
+        <g id="パス_319-3" data-name="パス 319" transform="translate(104 11)" fill="#fff">
+          <path d="M 58.5 38.5 L 0.5 38.5 L 0.5 0.5 L 58.5 0.5 L 58.5 38.5 Z" stroke="none"/>
+          <path d="M 1 1 L 1 38 L 58 38 L 58 1 L 1 1 M 0 0 L 59 0 L 59 39 L 0 39 L 0 0 Z" stroke="none"/>
+        </g>
+      </g>
+      <g id="パス_319-4" data-name="パス 319" transform="translate(166 225)" fill="none">
+        <path d="M 58.5 38.5 L 0.5 38.5 L 0.5 0.5 L 58.5 0.5 L 58.5 38.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 38 L 58 38 L 58 1 L 1 1 M 0 0 L 59 0 L 59 39 L 0 39 L 0 0 Z" stroke="none" fill="#707070"/>
+      </g>
+    </g>
+    <g data-type="innerShadowGroup">
+      <g id="パス_318-2" data-name="パス 318" transform="translate(160 260)" fill="#fff">
+        <path d="M 69.5 61.5 L 0.5 61.5 L 0.5 0.5 L 69.5 0.5 L 69.5 61.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 61 L 69 61 L 69 1 L 1 1 M 0 0 L 70 0 L 70 62 L 0 62 L 0 0 Z" stroke="none"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, 62, 214)" filter="url(#パス_318)">
+        <g id="パス_318-3" data-name="パス 318" transform="translate(98 46)" fill="#fff">
+          <path d="M 69.5 61.5 L 0.5 61.5 L 0.5 0.5 L 69.5 0.5 L 69.5 61.5 Z" stroke="none"/>
+          <path d="M 1 1 L 1 61 L 69 61 L 69 1 L 1 1 M 0 0 L 70 0 L 70 62 L 0 62 L 0 0 Z" stroke="none"/>
+        </g>
+      </g>
+      <g id="パス_318-4" data-name="パス 318" transform="translate(160 260)" fill="none">
+        <path d="M 69.5 61.5 L 0.5 61.5 L 0.5 0.5 L 69.5 0.5 L 69.5 61.5 Z" stroke="none"/>
+        <path d="M 1 1 L 1 61 L 69 61 L 69 1 L 1 1 M 0 0 L 70 0 L 70 62 L 0 62 L 0 0 Z" stroke="none" fill="#707070"/>
+      </g>
+    </g>
+    <g id="長方形_322" data-name="長方形 322" transform="translate(62 320)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="266" height="127" stroke="none"/>
+      <rect x="0.5" y="0.5" width="265" height="126" fill="none"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 62, 214)" filter="url(#長方形_323)">
+      <g id="長方形_323-2" data-name="長方形 323" transform="translate(55 171)" fill="#bbbbc4" stroke="#707070" stroke-width="1">
+        <rect width="157" height="74" stroke="none"/>
+        <rect x="0.5" y="0.5" width="156" height="73" fill="none"/>
+      </g>
+    </g>
+    <g id="長方形_324" data-name="長方形 324" transform="translate(142 416)" fill="#737373" stroke="#707070" stroke-linejoin="round" stroke-width="1">
+      <rect width="20" height="43" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="42" fill="none"/>
+    </g>
+    <g id="長方形_325" data-name="長方形 325" transform="translate(185 416)" fill="#737373" stroke="#707070" stroke-linejoin="round" stroke-width="1">
+      <rect width="20" height="43" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="42" fill="none"/>
+    </g>
+    <g id="長方形_326" data-name="長方形 326" transform="translate(228 416)" fill="#737373" stroke="#707070" stroke-linejoin="round" stroke-width="1">
+      <rect width="20" height="43" stroke="none"/>
+      <rect x="0.5" y="0.5" width="19" height="42" fill="none"/>
+    </g>
+    <rect id="長方形_329" data-name="長方形 329" width="11" height="15" transform="translate(155 331)" fill="#848484"/>
+    <rect id="長方形_330" data-name="長方形 330" width="11" height="15" transform="translate(155 357)" fill="#848484"/>
+    <rect id="長方形_331" data-name="長方形 331" width="11" height="15" transform="translate(178 331)" fill="#848484"/>
+    <rect id="長方形_332" data-name="長方形 332" width="11" height="15" transform="translate(178 357)" fill="#848484"/>
+    <rect id="長方形_333" data-name="長方形 333" width="11" height="15" transform="translate(201 331)" fill="#848484"/>
+    <rect id="長方形_334" data-name="長方形 334" width="11" height="15" transform="translate(201 357)" fill="#848484"/>
+    <rect id="長方形_335" data-name="長方形 335" width="11" height="15" transform="translate(224 331)" fill="#848484"/>
+    <rect id="長方形_336" data-name="長方形 336" width="11" height="15" transform="translate(224 357)" fill="#848484"/>
+    <g id="グループ_6" data-name="グループ 6">
+      <g id="グループ_2" data-name="グループ 2" transform="translate(0 -27)">
+        <rect id="長方形_337" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+      <g id="グループ_3" data-name="グループ 3" transform="translate(0 -1)">
+        <rect id="長方形_337-2" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338-2" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+      <g id="グループ_4" data-name="グループ 4" transform="translate(0 25)">
+        <rect id="長方形_337-3" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338-3" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+      <g id="グループ_5" data-name="グループ 5" transform="translate(0 51)">
+        <rect id="長方形_337-4" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338-4" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+    </g>
+    <g id="グループ_7" data-name="グループ 7" transform="translate(209)">
+      <g id="グループ_2-2" data-name="グループ 2" transform="translate(0 -27)">
+        <rect id="長方形_337-5" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338-5" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+      <g id="グループ_3-2" data-name="グループ 3" transform="translate(0 -1)">
+        <rect id="長方形_337-6" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338-6" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+      <g id="グループ_4-2" data-name="グループ 4" transform="translate(0 25)">
+        <rect id="長方形_337-7" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338-7" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+      <g id="グループ_5-2" data-name="グループ 5" transform="translate(0 51)">
+        <rect id="長方形_337-8" data-name="長方形 337" width="11" height="15" transform="translate(76 358)" fill="#848484"/>
+        <rect id="長方形_338-8" data-name="長方形 338" width="11" height="15" transform="translate(94 358)" fill="#848484"/>
+      </g>
+    </g>
+    <g id="長方形_340" data-name="長方形 340" transform="translate(195 265)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_341" data-name="長方形 341" transform="translate(195 281)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_342" data-name="長方形 342" transform="translate(204.5 273.5) rotate(90)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_343" data-name="長方形 343" transform="translate(185.5 274.5) rotate(-90)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_344" data-name="長方形 344" transform="translate(201.854 267.879) rotate(45)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_345" data-name="長方形 345" transform="translate(189.854 278.879) rotate(45)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_346" data-name="長方形 346" transform="translate(187.439 268.586) rotate(-45)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_347" data-name="長方形 347" transform="translate(201.5 280.293) rotate(135)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="2" stroke="none"/>
+      <rect x="0.5" y="0.5" height="1" fill="none"/>
+    </g>
+    <g id="長方形_348" data-name="長方形 348" transform="translate(188.5 268.707) rotate(-45)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="9.525" stroke="none"/>
+      <rect x="0.5" y="0.5" height="8.525" fill="none"/>
+    </g>
+    <g id="長方形_349" data-name="長方形 349" transform="translate(201.864 267.879) rotate(45)" fill="#fff" stroke="#707070" stroke-width="1">
+      <rect width="1" height="10" stroke="none"/>
+      <rect x="0.5" y="0.5" height="9" fill="none"/>
+    </g>
+    <g id="長方形_350" data-name="長方形 350" transform="translate(175 244)" fill="#737373" stroke="#707070" stroke-linejoin="round" stroke-width="1">
+      <rect width="7" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6" height="16" fill="none"/>
+    </g>
+    <g id="長方形_351" data-name="長方形 351" transform="translate(192 244)" fill="#737373" stroke="#707070" stroke-linejoin="round" stroke-width="1">
+      <rect width="7" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6" height="16" fill="none"/>
+    </g>
+    <g id="長方形_352" data-name="長方形 352" transform="translate(210 244)" fill="#737373" stroke="#707070" stroke-linejoin="round" stroke-width="1">
+      <rect width="7" height="17" stroke="none"/>
+      <rect x="0.5" y="0.5" width="6" height="16" fill="none"/>
+    </g>
+    <g id="グループ_8" data-name="グループ 8" transform="translate(-1)">
+      <rect id="長方形_353" data-name="長方形 353" width="7" height="15" transform="translate(183 292)" fill="#848484"/>
+      <rect id="長方形_354" data-name="長方形 354" width="7" height="15" transform="translate(202 292)" fill="#848484"/>
+    </g>
+  </g>
+</svg>

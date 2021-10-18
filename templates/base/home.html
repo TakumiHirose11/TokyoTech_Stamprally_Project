@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+{% block title %}TokyoTech_StamprallyProject | home {% endblock %}
+
+{% block head %}
+<link href="{% static 'css/home_style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block contents %}
+<h1>ホーム画面</h1>
+<p>色々書いてーー</p>
+<a href="{% url 'accounts:profile_setting' %}">プロフィール設定</a>
+
+{% if user.is_authenticated %}
+    <a href="{% url 'accounts:logout' %}"><p>ログアウト</p></a>
+{% endif %}
+
+{% endblock %}
+

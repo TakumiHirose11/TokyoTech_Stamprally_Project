@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+{% block title %}TokyoTech_StamprallyProject |signup done{% endblock %}
+
+{% block head %}
+<link href="{% static 'css/user_create_done_style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block contents %}
+<p>
+    会員登録確認メールを送信しました。まだ、会員登録は完了していません。<br>
+    確認メールを送信しましたので、確認メールに記載されているリンクから本登録を行ってください。
+</p>
+{% endblock %}

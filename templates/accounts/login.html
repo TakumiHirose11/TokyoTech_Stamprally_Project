@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+
+{% block title %}TokyoTech_StamprallyProject | login {% endblock %}
+
+{% block head %}
+<link href="{% static 'css/login_style.css' %}" rel="stylesheet">
+{% endblock %}
+
+{% block contents %}
+<section class="hero">
+    <h1>WELCOME</h1>
+
+    <form method="post" class="form">
+        {% csrf_token %}
+        <input type="hidden" name="text" value="{{ next }}">
+        {% bootstrap_form form %}
+        {% buttons %}
+        <button type="submit">
+            ログイン
+        </button>
+        {% endbuttons %}
+    </form>
+
+    <a href="{% url 'accounts:user_create' %}"><p class="p">アカウントを作成</p></a>
+
+    {% if user.is_authenticated %}
+    <a href="{% url 'accounts:logout' %}"><p class="p">ログアウト</p></a>
+    {% endif %}
+        
+   
+
+</section>
+
+    
+  
+
+{% endblock %}

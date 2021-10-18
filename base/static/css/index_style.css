@@ -1,0 +1,42 @@
+section{
+    height:30vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+.school{
+    margin-top: 1em;
+    width: 18rem;
+}
+
+.hero{
+    background-image: url(../img/blue_background.svg);
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.hero h1{
+    font-family: 'Raleway', sans-serif;
+    color: #305F72;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+
+.caption{
+    color: #4F9DBC;
+    font-size: 0.7rem;
+}
+
+.start{
+    margin: 0 auto;
+}
+
+.getstarted{
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    color: #305F72;
+    margin: 0.1em;
+}
+
+

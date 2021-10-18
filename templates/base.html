@@ -1,0 +1,27 @@
+{% load bootstrap5 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+{% load static %}
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+
+    <title>{% block title %}{% endblock %}</title>
+
+    <link href="{% static 'css/mystyle.css' %}" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">     
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    {% block head %}{% endblock %}
+</head>
+<html>
+    <body>
+        {% block header %}{% endblock %}
+        {% block contents %}{% endblock %}
+
+        
+        <hr>
+        <p class="footer">Copyright &copy;TokyoTech StamprallyProject 2021</p>
+    </body>
+</html>
