@@ -94,6 +94,8 @@ class User(AbstractBaseUser, PermissionsMixin):
 
 class Profile(models.Model):
     user=models.OneToOneField(User, verbose_name='ユーザー',on_delete=CASCADE)
+
+    
     unit_number=models.PositiveIntegerField(verbose_name='ユニット',default=1) #制約をつけたい
     
     SELECTION1=(('a','学院はどこですか？'),('b','部活・サークルは？'),('c','出身県はどこですか？'),('d','出身高校はどこですか？'),('e','興味のある分野はなんですか？'),('f','将来の夢はなんですか？'))

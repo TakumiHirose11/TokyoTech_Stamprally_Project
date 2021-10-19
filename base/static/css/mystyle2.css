@@ -1,0 +1,28 @@
+
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+html,body{
+    height: 100%;
+}
+
+.hero{
+    flex: 1;
+}
+
+.footerbutton{
+    display:flex;
+    justify-content: center;
+}
+
+.stamprally{
+    margin:1rem;
+    height: 3rem;
+}
+
+.settings{
+    margin:1rem;
+    height: 3rem;
+}
