@@ -59,7 +59,7 @@ class UserCreate(generic.CreateView):
 
 
 class UserCreateDone(generic.TemplateView):
-    """ユーザー仮登録したよ"""
+    """ユーザー仮登録完了"""
     template_name = 'accounts/user_create_done.html'
 
 

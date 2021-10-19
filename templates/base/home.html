@@ -15,11 +15,9 @@
 <section class="hero">
     <h1>ホーム</h1>
     <p>ここから作成してほしい！！</p>
-    <!--このリンクでプロフィールを作ることができる。開発者用。
-        <a href="{% url 'accounts:profile_create' %}"><p>プロフィール設定</p></a> -->
 
     {% if user.is_authenticated %}
-        <a href=""><p>プロフィール設定</p></a>
+        <a href=""><p>プロフィール設定</p></a> <!--開発中...-->
         <a href="{% url 'accounts:logout' %}"><p>ログアウト</p></a>
     {% endif %}
 

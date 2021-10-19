@@ -16,8 +16,11 @@
     <h1>WELCOME</h1>
 
     {% if user.is_authenticated %}
+    <p>ログインは完了しています</p>
+    <a class="btn btn-primary btn-lg" href="{% url 'base:home' %}">ホーム</a>
+    <p></p>
     <a class="btn btn-primary btn-lg" href="{% url 'accounts:logout' %}">ログアウト</a>
-    
+
     {% else %}
     <form method="post" class="form">
         {% csrf_token %}
