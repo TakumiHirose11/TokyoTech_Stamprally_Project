@@ -92,11 +92,19 @@ class User(AbstractBaseUser, PermissionsMixin):
         """
         return self.email
 
+class Unit(models.Model):
+    unit = models.IntegerField(null=True)
+
+    def __str__(self):
+        return 'U{u}'.format(u=self.unit)
+
+    class Meta: 
+        ordering = ['unit']
+
 class Profile(models.Model):
     user=models.OneToOneField(User, verbose_name='ユーザー',on_delete=CASCADE)
 
-    
-    unit_number=models.PositiveIntegerField(verbose_name='ユニット',default=1) #制約をつけたい
+    unit = models.ForeignKey(Unit, on_delete=models.CASCADE, default = 25) #harsh
     
     SELECTION1=(('a','学院はどこですか？'),('b','部活・サークルは？'),('c','出身県はどこですか？'),('d','出身高校はどこですか？'),('e','興味のある分野はなんですか？'),('f','将来の夢はなんですか？'))
     question1=models.CharField(max_length=1,choices=SELECTION1)
@@ -116,9 +124,31 @@ class Profile(models.Model):
     nickname=models.TextField(verbose_name='ニックネーム', max_length=20)
     comment=models.TextField(verbose_name='ひとことコメント', max_length=50,null=True)
 
+    #harsh
+    points = models.IntegerField(default = 0)  
+    key = models.CharField(max_length=10, null=True, blank=True)
+    key_vector = models.CharField(max_length=200, null=True, default='0')
+
     def __str__(self):
         return self.nickname
 
 
     class Meta:
         verbose_name_plural='Profile'
+
+
+class Answer(models.Model):
+    answer = models.CharField(max_length=150, null=True, blank=True, default=None)
+
+    def __str__(self):
+        return self.answer
+
+class Question(models.Model):
+    student = models.ForeignKey(Profile, on_delete=models.CASCADE, null = True)
+    question = models.CharField(max_length=150, null=True, blank=True, default=None)
+    answer = models.OneToOneField(Answer, on_delete=models.CASCADE, null=True, blank=False)
+
+    def __str__(self):
+        return self.question
+
+
