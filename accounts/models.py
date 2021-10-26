@@ -92,6 +92,8 @@ class User(AbstractBaseUser, PermissionsMixin):
         """
         return self.email
 
+
+
 class Unit(models.Model):
     unit = models.IntegerField(null=True)
 
@@ -101,28 +103,29 @@ class Unit(models.Model):
     class Meta: 
         ordering = ['unit']
 
+
+
 class Profile(models.Model):
     user=models.OneToOneField(User, verbose_name='ユーザー',on_delete=CASCADE)
 
     unit = models.ForeignKey(Unit, on_delete=models.CASCADE, default = 25) #harsh
     
-    SELECTION1=(('a','学院はどこですか？'),('b','部活・サークルは？'),('c','出身県はどこですか？'),('d','出身高校はどこですか？'),('e','興味のある分野はなんですか？'),('f','将来の夢はなんですか？'))
-    question1=models.CharField(max_length=1,choices=SELECTION1)
-    question2=models.CharField(max_length=1,choices=SELECTION1)
-    question3=models.CharField(max_length=1,choices=SELECTION1)
-
-    Monday=models.BooleanField(verbose_name='Monday',default=False)
-    Tuesday=models.BooleanField(verbose_name='Tuesday',default=False)
-    Wednesday=models.BooleanField(verbose_name='Wednesday',default=False)
-    Thursday=models.BooleanField(verbose_name='Thursday',default=False)
-    Friday=models.BooleanField(verbose_name='Friday',default=False)
-    Saturday=models.BooleanField(verbose_name='Saturday',default=False)
-    Sunday=models.BooleanField(verbose_name='Sunday',default=False)
-
-    
     profile_picture=models.ImageField(verbose_name='プロフィール写真', blank=True, null=True)
     nickname=models.TextField(verbose_name='ニックネーム', max_length=20)
     comment=models.TextField(verbose_name='ひとことコメント', max_length=50,null=True)
+
+    CHOICES = (
+        ('a', '学院はどこですか？'),
+        ('b', '部活サークルは？'),
+        ('c', '出身県は？'),
+        ('d', '出身高校は？'),
+        ('e', '興味のある分野は？'),
+        ('f', '将来の夢はなんですか？'),
+    )
+    question1 = models.CharField(max_length=150, choices = CHOICES)
+    question2 = models.CharField(max_length=150, choices = CHOICES)
+    answer1 = models.CharField(max_length=150, null=True, blank=True, default=None)
+    answer2 = models.CharField(max_length=150, null=True, blank=True, default=None)
 
     #harsh
     points = models.IntegerField(default = 0)  
@@ -135,20 +138,5 @@ class Profile(models.Model):
 
     class Meta:
         verbose_name_plural='Profile'
-
-
-class Answer(models.Model):
-    answer = models.CharField(max_length=150, null=True, blank=True, default=None)
-
-    def __str__(self):
-        return self.answer
-
-class Question(models.Model):
-    student = models.ForeignKey(Profile, on_delete=models.CASCADE, null = True)
-    question = models.CharField(max_length=150, null=True, blank=True, default=None)
-    answer = models.OneToOneField(Answer, on_delete=models.CASCADE, null=True, blank=False)
-
-    def __str__(self):
-        return self.question
 
 

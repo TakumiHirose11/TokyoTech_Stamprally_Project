@@ -111,4 +111,4 @@ class ProfileForm(forms.ModelForm):
     class Meta:
         model=Profile
         SELECTION1=(('a','学院はどこですか？'),('b','部活・サークルは？'),('c','出身県はどこですか？'),('d','出身高校はどこですか？'),('e','興味のある分野はなんですか？'),('f','将来の夢はなんですか？'))
-        fields=('unit','question1','question2','question3','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday','Sunday','profile_picture','nickname','comment')
+        fields=('unit','profile_picture','nickname','comment','question1','question2','answer1','answer2',)
